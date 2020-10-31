@@ -1,5 +1,8 @@
+#importing lib's
+#they are all built in lib's
 import random
 import string
+#asking the user qustions
 times = input('Enter The Nuber Of Password(s) You Want To Genarate: ')
 length = input('Enter The Length Of the Password(s): ')
 wantLower = input('Do you want lower case letters in the password(s) (y/n)')
@@ -7,13 +10,16 @@ wantUpper = input('Do you want upper case lestters in the password(s) (y/n)')
 wantNum = input('Do you want numbers in the password(s) (y/n)')
 wantPunc = input('Do you want punctuation in the password(s (y/n))')
 
+
+#checking to make sure that at least one option is on
 if wantLower == 'n' and wantUpper == 'n' and wantNum == 'n' and wantPunc == 'n':
     print('Cant have all digets and charecters set to no')
     quit()
 
-
+#setting all b and i to 0
 b = 0
 i = 0
+#setting the first rand int
 c = random.randint(1,4)
 while b < int(times):
     while i < int(length):
