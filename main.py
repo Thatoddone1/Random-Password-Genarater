@@ -25,6 +25,10 @@ while b < int(times):
         elif c == 4 and wantPunc == 'y':
             print(random.choice(string.punctuation), end='')
             i = i+1
+        elif wantPunc == 'n' or wantNum == 'n' or wantUpper == 'n' or wantLower == 'n':
+            pass
+        else:
+            print('error invalid value')
         c = random.randint(1,4)
             
     print('')
