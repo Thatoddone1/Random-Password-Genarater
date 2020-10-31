@@ -7,6 +7,10 @@ wantUpper = input('Do you want upper case lestters in the password(s) (y/n)')
 wantNum = input('Do you want numbers in the password(s) (y/n)')
 wantPunc = input('Do you want punctuation in the password(s (y/n))')
 
+if wantLower == 'n' and wantUpper == 'n' and wantNum == 'n' and wantPunc == 'n':
+    print('Cant have all digets and charecters set to no')
+    quit()
+
 
 b = 0
 i = 0
